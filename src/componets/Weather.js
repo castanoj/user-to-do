@@ -32,7 +32,7 @@ const Weather = () => {
 
   useEffect(() => {
     setTemperature(decimal);
-  }, [weather]);
+  }, [weather, decimal]);
 
   return (
     <div className="weather-app">

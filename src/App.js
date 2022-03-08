@@ -1,7 +1,4 @@
-import { useState, useEffect } from "react";
 import "./App.css";
-import axios from 'axios';
-import useApi from "./hooks/useApi";
 import Weather from "./componets/Weather";
 
 
