@@ -1,21 +1,24 @@
-//import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
-import QuoteBox from "./componets/QuoteBox";
-//import User from "./componets/User";
-//import quotes from "./colors.json"
-//import users from "./users.json"
+import axios from 'axios';
+import useApi from "./hooks/useApi";
+import Weather from "./componets/Weather";
+
+
 
 
 function App() {
 
- 
-  //console.log(quotes);
 
   return (
     <div className="App">
 
-      <QuoteBox/>
+    <Weather/>
 
+      {/* <h1>{response.results?.[0].name.first}</h1>
+      */}
+
+  <footer><p>Create by: Jorge Castaño</p></footer>
     </div>
   );
 }
