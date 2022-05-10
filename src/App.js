@@ -1,21 +1,15 @@
 import "./App.css";
-import Weather from "./componets/Weather";
-
-
-
-
+import WeatherApp from "./components/WeatherApp";
 function App() {
 
 
   return (
     <div className="App">
+    
+      
+    <WeatherApp/>
 
-    <Weather/>
 
-      {/* <h1>{response.results?.[0].name.first}</h1>
-      */}
-
-  <footer><p>Create by: Jorge Castaño</p></footer>
     </div>
   );
 }

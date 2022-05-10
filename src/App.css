@@ -8,9 +8,12 @@
 }
 
 body{
-  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);;
+	background: #44A08D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   font-family: 'Inter', sans-serif;
-  color: white;
+  color: black
   
 }
 
@@ -20,47 +23,46 @@ body{
   margin-top: 100px;
 }
 
-.weather-app{
-  padding: 35px 0;
-  text-align: center;
+
+.container{
+	border: #44A08D 2px solid;
+	border-radius: 15px;
+	width: 250px;
+	height: 300px;
+	margin: 0 auto;
+	
+}
+
+
+.bulb{
+	width: 150px;
+  height: 150px;
+  border-radius: 50%;
   margin: 0 auto;
-  background-color: white;
-  width: 300px;
-  border-radius: 5%;
-  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
-  box-shadow: 0px 10px 14px -7px rgba(0,0,0,0.5);
 }
 
-.weather-app p{
-  margin: 10px 0;
+.off{
+	background-color: gray;
 }
 
-.weather-app h1{
-  font-size: 12px;
-  font-weight: 300;
-}
-
-.weather-app h2{
-  font-size: 25px;
-  font-weight: 500;
-  
+.on{
+	background-color: yellow;
 }
 
 
-.sectioneOne{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
-  
-}
 
 
-.sectioneOne p{
-  
-  font-size: 30px;
-  font-weight: 300;
-}
+
+
+
+
+
+
+
+
+
+
+
 
 button{
 
@@ -74,7 +76,7 @@ button{
 	font-size:15px;
 	padding:5px 15px;
   border: none;
-	margin-top: 20px;
+	margin: 20px;
 	
 }
 
@@ -85,11 +87,4 @@ Button:hover {
 Button:active {
 	position:relative;
 	top:1px;
-}
-
-footer{
-  display: flex;
-  justify-content: center;
-  margin-top: 130px;
-  color: #3a47d5;
 }
