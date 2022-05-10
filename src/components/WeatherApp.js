@@ -52,7 +52,7 @@ const WeatherApp = () => {
   return (
     <div className="container">
       <div>
-        <p>{weather.name} - {weather.sys.country} </p>
+        <p>{weather.name} - {weather.sys?.country} </p>
       </div>
 
     <div className="information">
@@ -65,9 +65,9 @@ const WeatherApp = () => {
 
       <p>{weather.weather?.[0].main}</p>
 
-      <p>Wind Speed: {weather.wind.speed}</p>
+      <p>Wind Speed: {weather.wind?.speed}</p>
 
-      <p>Clouds: {weather.clouds.all}</p>
+      <p>Clouds: {weather.clouds?.all}</p>
 
 
     </div>
